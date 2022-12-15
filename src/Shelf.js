@@ -42,7 +42,7 @@ const Shelf = ({shelfTitle, shelfValue, booksArray, shelfNames, onUpdateShelf}) 
                             </div>
                           </div>
                           <div className="book-title">{book.title}</div>
-                          <div className="book-authors">{book.authors && book.authors[0]}</div>
+                          <div className="book-authors">{book.authors && book.authors.join(', ')}</div>
                         </div>
 
                   </li>
