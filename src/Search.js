@@ -80,7 +80,7 @@ const Search = ({onUpdateShelf, books}) => {
                       </div>
                     </div>
                     <div className="book-title">{searched.title}</div>
-                    <div className="book-authors">{searched.authors && searched.authors[0]}</div>
+                    <div className="book-authors">{searched.authors && searched.authors.join(', ')}</div>
                   </div>
                 </li>
       )}
